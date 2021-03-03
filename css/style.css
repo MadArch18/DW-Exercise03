@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+.pictures {
+    display: flex;
+    color: dimgray;
+    max-width: 1200px;
+    font-family: monospace;
+    font-size: 1.5em;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+div > div {
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
+}
