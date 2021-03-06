@@ -13,7 +13,7 @@ function Picture(url, title, tags, color) {
         container.addClass("picture");
 
         var showPictures = "";
-        showPictures += "<img src=" + this.url + ">"; //img tag
+        showPictures += "<img src=" + this.url + ">";
         showPictures += "<p>" + this.title + "</p>";
         container.html(showPictures);
         $(".pictures").prepend(container);

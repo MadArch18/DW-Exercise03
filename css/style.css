@@ -39,3 +39,38 @@ div > div {
     border-radius: 15px;
 
 }
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 2% 30%;
+
+}
+
+.filter {
+    display: inline-block;
+    text-decoration: none;
+    color: #363636;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: 2px solid #363636;
+    border-radius: 15px;
+    padding: 0 20px;
+    margin: 0 10px;
+    transition: all 0.3s;
+}
+
+.filter:hover {
+    color: #F3F1EC;
+    background-color: #363636;
+    cursor: pointer;
+}
+
+.filter:focus {
+    outline: none;
+}
+
+.filter:active {
+    background-color: lightblue;
+}
