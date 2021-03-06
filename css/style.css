@@ -1,14 +1,17 @@
 * {
     box-sizing: border-box;
+
 }
 
 html,
 body {
     min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     background-color: #F3F1EC;
+    min-width: 460px;
 }
 
 .pictures {
@@ -17,7 +20,6 @@ body {
     flex-flow: row wrap;
     color: #363636;
     max-width: 1600px;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     margin: auto;
     justify-content: center;
@@ -40,8 +42,18 @@ div > div {
 
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #363636;
+    padding-top: 15px;
+}
+
 .buttons {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin: 2% 30%;
 
@@ -51,7 +63,6 @@ div > div {
     display: inline-block;
     text-decoration: none;
     color: #363636;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     text-transform: uppercase;
     border: 2px solid #363636;
@@ -73,4 +84,19 @@ div > div {
 
 .filter:active {
     background-color: lightblue;
+}
+
+.active {
+    background-color: #D3B9B8;
+}
+
+@media screen and (max-width: 850px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .filter {
+        padding: 5px 0;
+        margin: 2% 15%;
+    }
 }
